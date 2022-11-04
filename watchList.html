@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist</title>
+        <link rel="stylesheet" href="../src/assets/css/watchList.css">
+        <script src="../src/js/watchList.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+    <div id="netflixWatchlist">
+        <nav id="navbar" class="navbar">
+            <div class="nav-left">
+                <a href="./homePage.html">
+                    <img src="../src/assets/images/netflixLogo.png" id="netflixlogo" alt="Netflix Logo"> 
+                </a>
+                <ul class="primary-navigation">
+                    <li class="category">
+                        <a class="browse" href="./homePage.html">Home</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#TV shows">TV Shows</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#Movies">Movies</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#New & Popular">New & Popular</a>
+                    </li>
+                    <li class="category">
+                        <button><a class="watchlist active" href="./watchList.html">My Watchlist</a></button>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#Coming Soon">Coming Soon</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="watchlist-items">
+            <h1>My List </h1> 
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in watchlist" class="displayMovie">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                        </div>
+                        <p class="title">{{event.title}}</p>
+                        <div class="removeListItem"><button class="removeButton" @click="removeWatchlistItem(index)">Remove from List</button></div> <!-- This button removes the list item from the watch list-->
+                </div>
+            </div>
+        </div>
+
+    </div>   
+</body>
+</html>

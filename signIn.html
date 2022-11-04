@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sign In Page</title>
+
+    <link rel="stylesheet" href="../src/assets/css/signIn.css" />
+  </head>
+  <body>
+
+    <nav class="navbar">
+        <div class="left">
+            <img src="../src/assets/images/netflixLogo.png" alt="Netflix Logo"/>
+    </div>
+
+    <div class="signIn">
+      <h1>Sign In</h1>
+      <form method="post" class="login" action>
+        <div class="signIn-inputs">
+          <div class="signIn-email">
+            <input
+              type="email"
+              name="signIn-email"
+              placeholder="Email or phone number"
+              required
+            />
+          </div>
+          <div class="signIn-password">
+            <input
+              type="password"
+              name="signIn-password"
+              placeholder="Password"
+              minlength="8"
+              required
+            />
+          </div>
+        </div>
+        
+        <button class="signIn-btn">
+          <a href="#" style="color: whitesmoke; text-decoration: none">Sign In</a>
+        </button>
+
+        <input type="checkbox" checked="checked">Remember me</input>
+        
+        <p class="help">Need help?</p>
+
+        <div class="newNetflix">
+        <span>New to Netflix?</span> <a href="./index.html">Sign up now. </a>
+
+          <p class="captcha">This page is protected by Google reCAPTCHA to ensure you're not a bot. Learn more.</p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

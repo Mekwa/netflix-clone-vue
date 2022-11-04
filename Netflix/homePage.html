@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Netflix</title>
+    <link rel="stylesheet" href="../src/assets/css/homePage.css">
+    <script src="../src/js/homePage.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body> 
+    
+    <div id="netflixApplication">    
+        
+        <nav id="navbar" class="navbar">
+            
+            <div class="nav-left">
+                <a href="./index.html">
+                    <img src="../src/assets/images/netflixLogo.png" id="netflixlogo" alt="Netflix Logo"> 
+                </a>
+                <ul class="primary-navigation">
+                    <li class="category">
+                        <a class="browse-active" href="./homePage.html">Home</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#comingSoon">Coming Soon</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#trendingNow">Trending Now</a>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#comedies">Comedy</a>
+                    </li>
+                    <li class="category">
+                        <button><a class="watchlist" href="./watchList.html">My Watchlist</a></button>
+                    </li>
+                    <li class="category">
+                        <a class="browse" href="#documentaries">Documentaries</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav-right">
+                
+                <ul class="list-nav-right">
+                    <li class="category">
+                        <a class="browse" href="./whoIsWatching.html">Kids</a>
+                    </li>
+                </ul>
+                <button class="notfications-btn"><img class="notification" src="../src/assets/images/notificationIcon.png" alt="Notifications"></button>
+                <button class="my-profile"><img class="my-profile" src="../src/assets/images/NetflixProfileOne.png" alt="My Profile"></button>
+            </div>
+        </nav>
+
+        
+        <div class="movie-trailer">
+            <video src="../src/assets/videos/TheyClonedTyroneOfficialTeaserNetflix.mp4">
+            autoplay=""
+            title="They Cloned Tyrone | Written by Juel Taylor Tony Rettenmaier | Directed by Juel Taylor | Cast Jamie Foxx, John Boyega, Teyonah Parris, Kiefer Suterland, J. Alphonse Nicholson | Official Teaser | Netflix"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            id="trailer"></video>
+        </div>  
+        
+        
+        <div class="card-slices">
+            <h1 id="comingSoon">Coming Soon</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in comingSoonFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div class="card">
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                       
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="card-slices">
+            <h1 id="trendingNow">Trending Now</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in trendingNowFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="card-slices">
+            <h1 id="actionThrillers">Action-Thrillers</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in actionThrillersFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>    
+
+        
+        <div class="card-slices">
+            <h1 id="comedies">Comedies</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in comediesFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card-slices">
+            <h1 id="anime">Anime & Anime Inspired</h1>
+            <div class="displayClassMainAxis">
+                <div v-for="(event, index) in animeFilter" class="displayMovie"> 
+                    <a class="movie-link">
+                        <div>
+                            <img :src="event.image" alt="Movie Images" class="movieImage">
+                            <button class="add-Btn" @click="addingToWatchList(event)">Add to Watchlist</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>           
+</body>
+<footer>
+
+</footer>
+</html>
