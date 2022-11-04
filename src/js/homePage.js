@@ -1,7 +1,7 @@
-let homepageVue = new Vue({ //el property of the Vue instance.
-    el: "#netflixApplication", //the value I set was #netflixApplication which is a reference in the HTML file just above the body tag.
+let homepageVue = new Vue({ 
+    el: "#netflixApplication", 
 
-    data: {  //these are booleans that are set to false, these indicate whether or not there's a list of the movies in the array below in progress or not, they are all set to false until we start sorting all the the movies/TV shows by id
+    data: {  
         list: false,
         completeList: false,
     
@@ -125,7 +125,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2019,
                 description: "When a rookie cop inadertently captures corrupt officers committing a murder on tape, loyalties are tested when she's hunted for the footage",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTS_hfKTCqBhdVRPombKNeJ0_B78KY7zaGfOcaq1m0J6Opv-gV_klb7XKJ140IebmBxdVqvpjxEr95s45af_R7dcIgaoFclaS7g.jpg?r=116",
-                preview: "https://www.youtube.com/watch?v=-JJHswVN5Ik",//Black and blue done
+                preview: "https://www.youtube.com/watch?v=-JJHswVN5Ik",
             },
 
             {
@@ -136,7 +136,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2016,
                 description: "Besieged by overwhelming enemy forces, Irish soldiers on an U.N peacekeeping mission in Africa defend their outmost in this story.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABele2smEze0w0zvcxsXLtV06-yYyvRyHBIKiLnxMMNXnAAZNXdv8VL5gkrbcJAGlBUeDM8aym81N0hWqgVrtOadY5xBQBFzTEIhObFpkm2_VebpknOxpEdur1ykLahGbVR21.jpg?r=e9d",
-                preview: "https://youtu.be/eI_LjETc_Ak", // The siege of Jadotville done
+                preview: "https://youtu.be/eI_LjETc_Ak", 
             },
 
             {
@@ -147,7 +147,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2019,
                 description: "Presumed dead for 5 years before being discovered on a remote Pacific island, billionare playboy Oliver returns home a changed man.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfvrd4Y728WPHJLWxM5nc5H0telb2_ty5HYOs_pDzGpFpCfxpDCzOASEa5DD6jd3KILnLJ2eT8E-Iicw1WuSqNJowZR70AQsN3A.jpg?r=19e",
-                preview: "https://www.youtube.com/watch?v=oc9Nae664vo",//arrow
+                preview: "https://www.youtube.com/watch?v=oc9Nae664vo",
                 
             },
 
@@ -159,7 +159,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2016,
                 description: "In this adapttation of the critically acclaimed video game franchise, a man on death row is rescued from execution by a mysterious organization.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABa9Q09T7lbNf1ktflr0C2CNfnToal6ttnQgMexCFPOn39qgj9qG0NQRpbqOsIWhYeZwyv22A07wC61eFHARURui05zfVsTjhymM.jpg?r=dac",
-                preview: "https://www.youtube.com/watch?v=4haJD6W136c",//Assassin's creed
+                preview: "https://www.youtube.com/watch?v=4haJD6W136c",
             },
 
             {
@@ -170,7 +170,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2022,
                 description: "After his little brother is murderedin cold blood, no amount of grief or pleas for pleace will stop Kaim from getting answers even if it means war.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABct29rL9I-y3V0IaouT3RvgKzCHqqbbrotthIsGJsvQHE7JGiTDG2-ZLE4nJEGVJZ668Lf9Qan-S7PO-o5BLm-edKuy3XUhkKcRTtQ1zwj4RP8L0hPUIfBMf8DUeN_8ay7mt.jpg?r=ed7",
-                preview: "https://www.youtube.com/watch?v=vRunUkdkK8s", //Athena
+                preview: "https://www.youtube.com/watch?v=vRunUkdkK8s",
             },
 
             {
@@ -192,7 +192,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2022,
                 description: "Madea's back - Hallelujer! And she's not putting up with any nonsense as family drama erupts at her great-grandson's college graduation celebration.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUJpM9CPy2oJ23YqWvqs0BO4m4k0axeHDvhAvWKR6sG-VktZmjM7ZAoWtQwbUDpMp1nEunDsT-ixYpMByyadVJUQ1S_a-pZUGqEjAHQFdlMkTC2yv11kRIiVvX4jaoZ3dTeM.jpg?r=46f",
-                preview: "https://www.youtube.com/watch?v=afJXk-RgzoQ",//Madea
+                preview: "https://www.youtube.com/watch?v=afJXk-RgzoQ",
             },
 
             {
@@ -203,7 +203,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2022,
                 description: "Best friends Sophia and Agatha find their bond put to the test when they're whisked away to a magical school for future fairy-tale heroes and villains.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABeeiPf-mLSl5ytYOsDglFyh7oFdfcfANaCHq0jWtRu8d5aq14RY_P5dm-AZ24eNzWqs0TkVkwrnf-B3GVMaLTp936xFAKRVsrIvIbIvkYppbtnFNUve-5KqVX7FN7joTMLpv.jpg?r=606",
-                preview: "https://www.youtube.com/watch?v=aftysDQ4hpI",//The School for good and evil
+                preview: "https://www.youtube.com/watch?v=aftysDQ4hpI",
             },
 
             {
@@ -214,7 +214,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2023,
                 description: "This collection of Minions shorts from the Despicable Me franchise includes mini-movies like Training Wheels, Puppy and Yellow Is the New Black.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaTrCAbICS46a9ROGY_aPcdmB2rLmVybMOM3SZiBz0f04DX8FNqJw7MpcWULq0GATBGz4WMkJPT8Sgvvqlcg8eROhLrPjQTap4ebEf_A0IMCP_tbHukSpcokUGXfdnVnLQNot2VDFwTQj-DXFSZHaUY0RgkLbXwcHufBdmqVXgOsNvdHIuMMk3TPXaZWJ1mrFKB1pj95ur_IRLe6KwRpkd8If6kcCWuw1I90UBix707ZahIJhyRHGITDCEFNFIRVNonowhgB9-pIsIeSUlgqiS_8.jpg?r=334",
-                preview: "https://www.youtube.com/watch?v=yHFBsGdIBzs",//Snabba cash
+                preview: "https://www.youtube.com/watch?v=yHFBsGdIBzs",
             },
 
             {
@@ -225,7 +225,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2022,
                 description: "Racial tensions and corruption come to a head in a small segrgated town after police find a body of a young Afrikaner girl in the bush.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYaZhjwsDfldIuyLgJ-wrNiL4cw9kakMJ-kO9yXO6fDFm1aHZmORrB9O27EIbCqB5tDvIA_DNvQSKbn1uC4b2jx9kV2iEv9ZYgKhIkAVvHCPEcEQlEsWnuGJYYM1YJTE8XoR.jpg?r=876",
-                preview: "https://youtu.be/pJeQAhaRW80",//must fix  preview
+                preview: "https://youtu.be/pJeQAhaRW80",
             },
 
             {
@@ -236,7 +236,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2022,
                 description: "On the planet Latimer, Takeshi Kavocs must protect a tattooist while investigating the death of a yakuza boss alongside a no-nonsense CTAC.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbU0HFtzeRnlKJ-faLxW3nGHdOLPf_VP3_JdDDG5DNLV4REw_UVF0s2m_WDaKEd64op9NVFWVkEOxWWct-q-T-yEBFTeyUsnDpC3QBk0ydRrmY-iYiNhZLaIQAb4xUKJUFvg.jpg?r=7de",
-                preview: "https://www.youtube.com/watch?v=HmDxxoFslzs", // Altered Carbon Resveeled Done
+                preview: "https://www.youtube.com/watch?v=HmDxxoFslzs",
             },
 
             {
@@ -247,7 +247,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2015,
                 description: "When a kingdom is taken over by tyrants, the deposed princess begins a quest to find a disbanded group of evil knights to help take back her realm.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABezRWGtm3ul0HI5O78Gf-W0dMl736UM1oBvJC2Qu0U-d3UZk28ItIgHbaJyhqOx1bIZD4RdC5wwJuHR_XTBpN6Tsv7Z4OqHVEupYlkJYdBadpzEPGfHsi53pKxPMqxB0aq9o.jpg?r=5ef",
-                preview: "https://www.youtube.com/watch?v=wxcvbL6o55M", // Seven deadly sins Done
+                preview: "https://www.youtube.com/watch?v=wxcvbL6o55M",
             },
 
             {
@@ -258,7 +258,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2019,
                 description: "Orphans raised by martial arts master into a mystery involving demonic powers, drug cartels rituals and blood sacrifice.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY6LyXcwDWXnJfEgiHaeL3f73e1MG8kfDf0Hza4KMpKl2W_mbKud25BcMaLTNsb1SzSVtfQsuCWpa5C8VX62vqmDlwc9HItuXf-_BQOUiqYe89G1HfV7gEEZiZWYRmZprMXf.jpg?r=408",
-                preview: "https://www.youtube.com/watch?v=z9AMScNK5Zw", //Seis Manos Done
+                preview: "https://www.youtube.com/watch?v=z9AMScNK5Zw",
             },
 
             {
@@ -269,7 +269,7 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2022,
                 description: "An ancient civilazation's relics on earth hold dangerous powers - it's up to ARCAM Corporatio's Spriggan to keep them out of the wrong.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABY2FnAFaN117m3HmZoKjtPN7odQCI46kvmdsabV9vxlxD5Ct3cwhFLLj6TGM31E9Xu8lndrLjlVSvBjUuCMK83OKzvxtymbq131uckJIggarVt1QaxVutGTT8-Yc0nDNmbyi.jpg?r=551",
-                preview: "https://www.youtube.com/watch?v=IZJMihZ8ujg", //Seis Manos Done
+                preview: "https://www.youtube.com/watch?v=IZJMihZ8ujg",
             },
 
             {
@@ -280,13 +280,13 @@ let homepageVue = new Vue({ //el property of the Vue instance.
                 availDate: 2019,
                 description: "Ajro Fisheries Yoshinari Karo faces Saw Paing Yorozuka. The fix is in: the match is rigged. But Karo and his harpoon aren't following the script.",
                 image: "https://occ-0-5294-34.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABU4Q-6tODGX6XR6DUDRfx8iW25PWCDLVuLoBbzPcqCxFNlugBScF9PxVIESTGRt_Ix64KZXUeM7ALBtXlpIyJ1dxoOcN6mcEyfQoX8mMC-uJpDeyQVkbQiwIIZgMF4jBu4xn.jpg?r=d8c",
-                preview: "https://www.youtube.com/watch?v=CNuY4ymi4Fs", //Kengan Ashura Done
+                preview: "https://www.youtube.com/watch?v=CNuY4ymi4Fs",
             },
         ],
     },
         
-        computed: { //computed is there to help create, modify, manipulate or display data within your components in a readable, efficient manner. This also helps with updating and creating new elements as time goes on.
-            comingSoonFilter() { //moviesComingSoonFilter is a function that will return an object with two properties: The movies and filter to coming soon.
+        computed: { 
+            comingSoonFilter() { 
                 let comingSoonFilter = this.movies.filter((movie) => { 
                     return movie.id.toLowerCase().includes("comingSoon".toLowerCase()); 
             });

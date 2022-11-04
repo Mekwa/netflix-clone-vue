@@ -1,0 +1,22 @@
+:root{
+    --primary-color:red;
+    --secondary-color:white;
+    --third-color:black;
+}
+
+.setting-3{
+    margin-top: 10%;
+    text-align: center;
+}
+button{
+    background-color: var(--primary-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 95px;
+    padding-right: 95px;
+    font-size: x-large;
+}
+.nxt-btn-4{
+    color: var(--secondary-color);
+}
+
